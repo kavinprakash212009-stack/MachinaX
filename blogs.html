@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Blogs &amp; Technical Publications | MachinaX</title>
+  <meta name="description" content="Technical publications, engineering whitepapers, and breakthroughs in robotics, artificial intelligence, and physical computing from MachinaX." />
+  <link rel="icon" type="image/svg+xml" href="assets/icons/logo.svg" />
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;700&family=Orbitron:wght@500;700;800;900&family=Plus+Jakarta+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
+
+  <!-- Stylesheets -->
+  <link rel="stylesheet" href="css/style.css" />
+  <link rel="stylesheet" href="css/animations.css" />
+  <link rel="stylesheet" href="css/responsive.css" />
+</head>
+<body>
+
+  <!-- Ambient Interactive Canvas Background -->
+  <canvas id="bg-canvas"></canvas>
+  <div class="ambient-grid"></div>
+
+  <!-- Floating Navigation Bar -->
+  <header class="site-header">
+    <div class="container">
+      <nav class="nav-container">
+        <a href="index.html" class="brand-logo" aria-label="MachinaX Home">
+          <div class="logo-symbol">
+            <svg viewBox="0 0 100 100" fill="none">
+              <polygon points="50,5 90,27.5 90,72.5 50,95 10,72.5 10,27.5" stroke="#00D9FF" stroke-width="6" fill="rgba(16, 22, 41, 0.7)" />
+              <path d="M28,68 L28,32 L50,54 L72,32 L72,68" stroke="#FFFFFF" stroke-width="6" stroke-linecap="round" stroke-linejoin="round" />
+              <circle cx="50" cy="50" r="5" fill="#00D9FF" />
+            </svg>
+          </div>
+          Machina<span class="highlight">X</span>
+        </a>
+
+        <div class="nav-menu">
+          <a href="index.html" class="nav-link">Home</a>
+          <a href="about.html" class="nav-link">About</a>
+          <a href="explore.html" class="nav-link">Explore</a>
+          <a href="projects.html" class="nav-link">Projects</a>
+          <a href="blogs.html" class="nav-link active">Blogs</a>
+          <a href="contact.html" class="nav-link">Contact</a>
+        </div>
+
+        <a href="contact.html" class="nav-cta-btn">
+          <span>SUBSCRIBE</span>
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+        </a>
+
+        <button class="mobile-toggle" aria-label="Toggle navigation menu" aria-expanded="false">
+          <span></span>
+        </button>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <!-- Blogs Magazine Header -->
+    <section class="section" style="padding-top: 170px;">
+      <div class="container">
+        <div class="section-title-wrap reveal">
+          <span class="section-tag">PUBLICATIONS &amp; RESEARCH LOGS</span>
+          <h1 class="section-heading">
+            MACHINAX<br />
+            <span class="highlight">TECHNOLOGY MAGAZINE</span>
+          </h1>
+          <p class="section-subtitle">
+            Original engineering deep-dives, peer-reviewed architectures, and exploratory dispatches direct from our laboratory specialists.
+          </p>
+        </div>
+
+        <!-- Featured Spotlight Card -->
+        <div class="glass-panel tilt-card reveal" style="padding: 36px; margin-bottom: 50px;">
+          <div class="hero-grid" style="align-items: center; gap: 40px;">
+            <div style="height: 260px; border-radius: var(--radius-md); overflow: hidden; border: 1px solid var(--glass-border);">
+              <img src="assets/images/blog-robotics.svg" alt="Featured Article: Biomorphic Actuators" style="width: 100%; height: 100%; object-fit: cover;" />
+            </div>
+            <div>
+              <div style="display: flex; gap: 10px; margin-bottom: 12px; align-items: center;">
+                <span class="tech-cat-badge" style="background: rgba(0, 217, 255, 0.15); border-color: var(--electric-blue);">FEATURED DISCLOSURE</span>
+                <span style="font-family: var(--font-mono); font-size: 0.75rem; color: var(--text-muted);">6 MIN READ</span>
+              </div>
+              <h2 style="font-family: var(--font-display); font-size: 1.8rem; color: var(--white); margin-bottom: 14px; line-height: 1.25;">
+                <a href="blog/article-template.html?id=neural-biomorphic-actuators" style="color: var(--white); transition: color 0.2s;">Neural Biomorphic Actuators: Next-Gen Bipedal Locomotion</a>
+              </h2>
+              <p style="color: var(--text-secondary); font-size: 0.95rem; line-height: 1.7; margin-bottom: 24px;">
+                How artificial muscle bundles with micro-hydraulic channels and neuromorphic feedback loops are revolutionizing humanoid agility and dynamic compliance.
+              </p>
+              <div style="display: flex; align-items: center; justify-content: space-between; flex-wrap: wrap; gap: 16px;">
+                <div style="font-size: 0.82rem; color: var(--text-muted); font-family: var(--font-mono);">
+                  By <strong style="color: var(--white);">Dr. Aris Thorne</strong> • Oct 18, 2026
+                </div>
+                <a href="blog/article-template.html?id=neural-biomorphic-actuators" class="btn-primary" style="padding: 10px 24px;">
+                  READ ARTICLE &rarr;
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Blog Search and Category Filter Controls -->
+        <div class="blog-controls-wrap reveal">
+          <div class="category-filter-bar">
+            <button class="filter-chip active" data-category="All">All Topics</button>
+            <button class="filter-chip" data-category="Robotics">Robotics</button>
+            <button class="filter-chip" data-category="AI">AI</button>
+            <button class="filter-chip" data-category="Engineering">Engineering</button>
+            <button class="filter-chip" data-category="Tutorials">Tutorials</button>
+            <button class="filter-chip" data-category="Research">Research</button>
+          </div>
+
+          <div class="blog-search-box">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" style="color: var(--text-muted);"><circle cx="11" cy="11" r="8"/><path d="m21 21-4.35-4.35"/></svg>
+            <input type="text" id="blog-search-input" placeholder="Search technical articles or tags..." aria-label="Search articles" />
+          </div>
+        </div>
+
+        <!-- Blog Cards Grid Container (Populated by js/blogs.js) -->
+        <div class="blogs-grid" id="blogs-container">
+          <!-- Dynamically populated -->
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-top">
+        <div class="footer-brand-col">
+          <a href="index.html" class="brand-logo">
+            <div class="logo-symbol">
+              <svg viewBox="0 0 100 100" fill="none">
+                <polygon points="50,5 90,27.5 90,72.5 50,95 10,72.5 10,27.5" stroke="#00D9FF" stroke-width="6" fill="rgba(16, 22, 41, 0.7)" />
+                <path d="M28,68 L28,32 L50,54 L72,32 L72,68" stroke="#FFFFFF" stroke-width="6" stroke-linecap="round" stroke-linejoin="round" />
+                <circle cx="50" cy="50" r="5" fill="#00D9FF" />
+              </svg>
+            </div>
+            Machina<span class="highlight">X</span>
+          </a>
+          <p>ENGINEERING TOMORROW. TODAY.</p>
+          <div class="footer-status-indicator">
+            <span class="status-dot-pulse"></span>
+            <span>ALL SYSTEMS NOMINAL // 2026</span>
+          </div>
+        </div>
+
+        <div class="footer-links-col">
+          <h4 class="footer-heading">NAVIGATION</h4>
+          <ul class="footer-links-list">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="explore.html">Explore Showcase</a></li>
+            <li><a href="projects.html">Projects Portfolio</a></li>
+            <li><a href="blogs.html">Blogs &amp; Insights</a></li>
+            <li><a href="contact.html">Contact Us</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-links-col">
+          <h4 class="footer-heading">RESEARCH</h4>
+          <ul class="footer-links-list">
+            <li><a href="explore.html">Robotics Engineering</a></li>
+            <li><a href="explore.html">Artificial Intelligence</a></li>
+            <li><a href="explore.html">Automation &amp; Swarms</a></li>
+            <li><a href="admin/index.html">Control Center</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-newsletter-col">
+          <h4 class="footer-heading">SUBMIT RESEARCH</h4>
+          <p style="color: var(--text-secondary); font-size: 0.85rem; margin-bottom: 16px;">
+            Submit an engineering paper for publication:
+          </p>
+          <div style="font-family: var(--font-mono); font-size: 0.82rem; color: var(--electric-blue); word-break: break-all; margin-bottom: 20px;">
+            kavinprakash212009@gmail.com
+          </div>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <div>&copy; 2026 MachinaX. All Rights Reserved.</div>
+        <div class="footer-legal-links">
+          <a href="privacy.html">Privacy Policy</a>
+          <a href="terms.html">Terms and Conditions</a>
+          <a href="sitemap.xml">Sitemap</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Fallback local dataset script + blog logic -->
+  <script src="data/blogs-data.js"></script>
+  <script src="js/main.js"></script>
+  <script src="js/animations.js"></script>
+  <script src="js/blogs.js"></script>
+</body>
+</html>
+

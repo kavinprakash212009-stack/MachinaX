@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Projects Portfolio | MachinaX Engineering Labs</title>
+  <meta name="description" content="Explore MachinaX's active and completed engineering initiatives across autonomous robotics, edge AI, and high-energy physics." />
+  <link rel="icon" type="image/svg+xml" href="assets/icons/logo.svg" />
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;700&family=Orbitron:wght@500;700;800;900&family=Plus+Jakarta+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
+
+  <!-- Stylesheets -->
+  <link rel="stylesheet" href="css/style.css" />
+  <link rel="stylesheet" href="css/animations.css" />
+  <link rel="stylesheet" href="css/responsive.css" />
+</head>
+<body>
+
+  <!-- Ambient Interactive Canvas Background -->
+  <canvas id="bg-canvas"></canvas>
+  <div class="ambient-grid"></div>
+
+  <!-- Floating Navigation Bar -->
+  <header class="site-header">
+    <div class="container">
+      <nav class="nav-container">
+        <a href="index.html" class="brand-logo" aria-label="MachinaX Home">
+          <div class="logo-symbol">
+            <svg viewBox="0 0 100 100" fill="none">
+              <polygon points="50,5 90,27.5 90,72.5 50,95 10,72.5 10,27.5" stroke="#00D9FF" stroke-width="6" fill="rgba(16, 22, 41, 0.7)" />
+              <path d="M28,68 L28,32 L50,54 L72,32 L72,68" stroke="#FFFFFF" stroke-width="6" stroke-linecap="round" stroke-linejoin="round" />
+              <circle cx="50" cy="50" r="5" fill="#00D9FF" />
+            </svg>
+          </div>
+          Machina<span class="highlight">X</span>
+        </a>
+
+        <div class="nav-menu">
+          <a href="index.html" class="nav-link">Home</a>
+          <a href="about.html" class="nav-link">About</a>
+          <a href="explore.html" class="nav-link">Explore</a>
+          <a href="projects.html" class="nav-link active">Projects</a>
+          <a href="blogs.html" class="nav-link">Blogs</a>
+          <a href="contact.html" class="nav-link">Contact</a>
+        </div>
+
+        <a href="contact.html" class="nav-cta-btn">
+          <span>COLLABORATE</span>
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+        </a>
+
+        <button class="mobile-toggle" aria-label="Toggle navigation menu" aria-expanded="false">
+          <span></span>
+        </button>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <!-- Projects Header -->
+    <section class="section" style="padding-top: 170px;">
+      <div class="container">
+        <div class="section-title-wrap reveal">
+          <span class="section-tag">ENGINEERING INITIATIVES</span>
+          <h1 class="section-heading">
+            MISSION-CRITICAL<br />
+            <span class="highlight">PROJECT PORTFOLIO</span>
+          </h1>
+          <p class="section-subtitle">
+            From biomimetic bipedal exoskeletons to cryogenic superconducting grids and deep-space swarm meshes, inspect our realized initiatives.
+          </p>
+        </div>
+
+        <!-- Category Filters -->
+        <div style="display: flex; justify-content: center; gap: 12px; margin-bottom: 50px; flex-wrap: wrap;" class="reveal">
+          <button class="filter-chip project-filter-chip active" data-category="All">ALL INITIATIVES</button>
+          <button class="filter-chip project-filter-chip" data-category="Robotics">ROBOTICS</button>
+          <button class="filter-chip project-filter-chip" data-category="AI">ARTIFICIAL INTELLIGENCE</button>
+          <button class="filter-chip project-filter-chip" data-category="Engineering">ENGINEERING EXPERIMENTS</button>
+        </div>
+
+        <!-- Projects Grid Container (Populated by js/projects.js) -->
+        <div class="projects-grid" id="projects-container">
+          <!-- Fallback or dynamic content -->
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-top">
+        <div class="footer-brand-col">
+          <a href="index.html" class="brand-logo">
+            <div class="logo-symbol">
+              <svg viewBox="0 0 100 100" fill="none">
+                <polygon points="50,5 90,27.5 90,72.5 50,95 10,72.5 10,27.5" stroke="#00D9FF" stroke-width="6" fill="rgba(16, 22, 41, 0.7)" />
+                <path d="M28,68 L28,32 L50,54 L72,32 L72,68" stroke="#FFFFFF" stroke-width="6" stroke-linecap="round" stroke-linejoin="round" />
+                <circle cx="50" cy="50" r="5" fill="#00D9FF" />
+              </svg>
+            </div>
+            Machina<span class="highlight">X</span>
+          </a>
+          <p>ENGINEERING TOMORROW. TODAY.</p>
+          <div class="footer-status-indicator">
+            <span class="status-dot-pulse"></span>
+            <span>ALL SYSTEMS NOMINAL // 2026</span>
+          </div>
+        </div>
+
+        <div class="footer-links-col">
+          <h4 class="footer-heading">NAVIGATION</h4>
+          <ul class="footer-links-list">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="explore.html">Explore Showcase</a></li>
+            <li><a href="projects.html">Projects Portfolio</a></li>
+            <li><a href="blogs.html">Blogs &amp; Insights</a></li>
+            <li><a href="contact.html">Contact Us</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-links-col">
+          <h4 class="footer-heading">RESEARCH</h4>
+          <ul class="footer-links-list">
+            <li><a href="explore.html">Robotics Engineering</a></li>
+            <li><a href="explore.html">Artificial Intelligence</a></li>
+            <li><a href="explore.html">Automation &amp; Swarms</a></li>
+            <li><a href="admin/index.html">Control Center</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-newsletter-col">
+          <h4 class="footer-heading">PROJECT INQUIRIES</h4>
+          <p style="color: var(--text-secondary); font-size: 0.85rem; margin-bottom: 16px;">
+            Partnership and prototyping requests:
+          </p>
+          <div style="font-family: var(--font-mono); font-size: 0.82rem; color: var(--electric-blue); word-break: break-all; margin-bottom: 20px;">
+            kavinprakash212009@gmail.com
+          </div>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <div>&copy; 2026 MachinaX. All Rights Reserved.</div>
+        <div class="footer-legal-links">
+          <a href="privacy.html">Privacy Policy</a>
+          <a href="terms.html">Terms and Conditions</a>
+          <a href="sitemap.xml">Sitemap</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Modal Dialog for Full Project Specifications -->
+  <div id="details-modal" class="modal-overlay" role="dialog" aria-modal="true" aria-hidden="true">
+    <div class="modal-content-panel">
+      <button id="modal-close-btn" class="modal-close-btn" aria-label="Close dialog">&times;</button>
+      <div id="modal-body"></div>
+    </div>
+  </div>
+
+  <!-- Fallback local dataset script + project logic -->
+  <script src="data/projects-data.js"></script>
+  <script src="js/main.js"></script>
+  <script src="js/animations.js"></script>
+  <script src="js/projects.js"></script>
+</body>
+</html>
+

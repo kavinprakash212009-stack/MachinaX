@@ -1,0 +1,413 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Explore Technologies | MachinaX Showcase</title>
+  <meta name="description" content="Explore MachinaX's 6 core engineering domains: Robotics Engineering, Artificial Intelligence, Automation, Electronics, Programming, and Experimental Projects." />
+  <link rel="icon" type="image/svg+xml" href="assets/icons/logo.svg" />
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;700&family=Orbitron:wght@500;700;800;900&family=Plus+Jakarta+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
+
+  <!-- Stylesheets -->
+  <link rel="stylesheet" href="css/style.css" />
+  <link rel="stylesheet" href="css/animations.css" />
+  <link rel="stylesheet" href="css/responsive.css" />
+</head>
+<body>
+
+  <!-- Ambient Interactive Canvas Background -->
+  <canvas id="bg-canvas"></canvas>
+  <div class="ambient-grid"></div>
+
+  <!-- Floating Header -->
+  <header class="site-header">
+    <div class="container">
+      <nav class="nav-container">
+        <a href="index.html" class="brand-logo" aria-label="MachinaX Home">
+          <div class="logo-symbol">
+            <svg viewBox="0 0 100 100" fill="none">
+              <polygon points="50,5 90,27.5 90,72.5 50,95 10,72.5 10,27.5" stroke="#00D9FF" stroke-width="6" fill="rgba(16, 22, 41, 0.7)" />
+              <path d="M28,68 L28,32 L50,54 L72,32 L72,68" stroke="#FFFFFF" stroke-width="6" stroke-linecap="round" stroke-linejoin="round" />
+              <circle cx="50" cy="50" r="5" fill="#00D9FF" />
+            </svg>
+          </div>
+          Machina<span class="highlight">X</span>
+        </a>
+
+        <div class="nav-menu">
+          <a href="index.html" class="nav-link">Home</a>
+          <a href="about.html" class="nav-link">About</a>
+          <a href="explore.html" class="nav-link active">Explore</a>
+          <a href="projects.html" class="nav-link">Projects</a>
+          <a href="blogs.html" class="nav-link">Blogs</a>
+          <a href="contact.html" class="nav-link">Contact</a>
+        </div>
+
+        <a href="projects.html" class="nav-cta-btn">
+          <span>PORTFOLIO</span>
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+        </a>
+
+        <button class="mobile-toggle" aria-label="Toggle navigation menu" aria-expanded="false">
+          <span></span>
+        </button>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <!-- Explore Showcase Header -->
+    <section class="section" style="padding-top: 170px;">
+      <div class="container">
+        <div class="section-title-wrap reveal">
+          <span class="section-tag">TECHNOLOGICAL ATLAS</span>
+          <h1 class="section-heading">
+            EXPLORE THE MATRIX OF<br />
+            <span class="highlight">FUTURE CAPABILITIES</span>
+          </h1>
+          <p class="section-subtitle">
+            A comprehensive matrix of our six foundational engineering pillars, bridging physical mechanics, sub-micron silicon, and decentralized cognition.
+          </p>
+        </div>
+
+        <!-- Filter Controls -->
+        <div style="display: flex; justify-content: center; gap: 12px; margin-bottom: 50px; flex-wrap: wrap;" class="reveal">
+          <button class="filter-chip active" data-filter="all">ALL DOMAINS</button>
+          <button class="filter-chip" data-filter="robotics">ROBOTICS</button>
+          <button class="filter-chip" data-filter="ai">AI</button>
+          <button class="filter-chip" data-filter="automation">AUTOMATION</button>
+          <button class="filter-chip" data-filter="electronics">ELECTRONICS</button>
+          <button class="filter-chip" data-filter="programming">PROGRAMMING</button>
+          <button class="filter-chip" data-filter="experimental">EXPERIMENTAL</button>
+        </div>
+
+        <!-- 6 Interactive Technology Glass Cards -->
+        <div class="showcase-grid" id="explore-cards-grid">
+          <!-- Domain 1: Robotics Engineering -->
+          <div class="tech-card tilt-card reveal" data-category="robotics">
+            <div class="tech-header">
+              <span class="tech-cat-badge">01 // ROBOTICS</span>
+              <span class="tech-status-dot"></span>
+            </div>
+            <h3 class="tech-card-title">Robotics Engineering</h3>
+            <p class="tech-card-desc">
+              Biomorphic electro-hydraulic muscle fibers, high-frequency torque dampeners, and anthropomorphic bipedal walking stabilization models.
+            </p>
+            <div class="tech-metrics">
+              <div class="metric-cell"><span class="metric-val">8.4 kN</span><span class="metric-key">PEAK THRUST</span></div>
+              <div class="metric-cell"><span class="metric-val">&lt; 1.8 ms</span><span class="metric-key">RESPONSE LATENCY</span></div>
+            </div>
+            <div class="pillar-specs" style="margin-bottom: 20px;">
+              <span class="spec-chip">Actuators</span>
+              <span class="spec-chip">Kinematics</span>
+              <span class="spec-chip">Proprioception</span>
+            </div>
+            <button class="btn-secondary" style="width: 100%; padding: 10px;" onclick="showExploreDetail('robotics')">
+              DOMAIN SPECIFICATIONS &rarr;
+            </button>
+          </div>
+
+          <!-- Domain 2: Artificial Intelligence -->
+          <div class="tech-card tilt-card reveal reveal-delay-1" data-category="ai">
+            <div class="tech-header">
+              <span class="tech-cat-badge">02 // AI &amp; MACHINE LEARNING</span>
+              <span class="tech-status-dot"></span>
+            </div>
+            <h3 class="tech-card-title">Artificial Intelligence</h3>
+            <p class="tech-card-desc">
+              Self-recompiling edge neural networks, continuous multimodal world-state synthesis, and radiation-tolerant neuromorphic silicon processors.
+            </p>
+            <div class="tech-metrics">
+              <div class="metric-cell"><span class="metric-val">68 Billion</span><span class="metric-key">MoE WEIGHTS</span></div>
+              <div class="metric-cell"><span class="metric-val">4.8 TFLOPS/W</span><span class="metric-key">EFFICIENCY</span></div>
+            </div>
+            <div class="pillar-specs" style="margin-bottom: 20px;">
+              <span class="spec-chip">Spiking Neurons</span>
+              <span class="spec-chip">Transformer Core</span>
+              <span class="spec-chip">Dynamic Pruning</span>
+            </div>
+            <button class="btn-secondary" style="width: 100%; padding: 10px;" onclick="showExploreDetail('ai')">
+              DOMAIN SPECIFICATIONS &rarr;
+            </button>
+          </div>
+
+          <!-- Domain 3: Automation -->
+          <div class="tech-card tilt-card reveal reveal-delay-2" data-category="automation">
+            <div class="tech-header">
+              <span class="tech-cat-badge">03 // AUTOMATION &amp; SWARMS</span>
+              <span class="tech-status-dot"></span>
+            </div>
+            <h3 class="tech-card-title">Automation &amp; Swarms</h3>
+            <p class="tech-card-desc">
+              Decentralized peer-to-peer gossip algorithms allowing thousands of robotic units to self-coordinate search, rescue, and construction tasks.
+            </p>
+            <div class="tech-metrics">
+              <div class="metric-cell"><span class="metric-val">10,000+</span><span class="metric-key">SWARM MESH</span></div>
+              <div class="metric-cell"><span class="metric-val">250 km</span><span class="metric-key">ENCRYPTED RELAY</span></div>
+            </div>
+            <div class="pillar-specs" style="margin-bottom: 20px;">
+              <span class="spec-chip">Zero Server</span>
+              <span class="spec-chip">Gossip Mesh</span>
+              <span class="spec-chip">Byzantine Fault</span>
+            </div>
+            <button class="btn-secondary" style="width: 100%; padding: 10px;" onclick="showExploreDetail('automation')">
+              DOMAIN SPECIFICATIONS &rarr;
+            </button>
+          </div>
+
+          <!-- Domain 4: Electronics -->
+          <div class="tech-card tilt-card reveal" data-category="electronics">
+            <div class="tech-header">
+              <span class="tech-cat-badge">04 // ELECTRONICS &amp; SENSORS</span>
+              <span class="tech-status-dot"></span>
+            </div>
+            <h3 class="tech-card-title">Advanced Electronics</h3>
+            <p class="tech-card-desc">
+              Event-based neuromorphic cameras, solid-state optical LiDAR, piezoelectric thin films, and high-frequency power distribution matrices.
+            </p>
+            <div class="tech-metrics">
+              <div class="metric-cell"><span class="metric-val">2 &mu;s</span><span class="metric-key">TIME RESOLUTION</span></div>
+              <div class="metric-cell"><span class="metric-val">100 MHz</span><span class="metric-key">SAMPLING RATE</span></div>
+            </div>
+            <div class="pillar-specs" style="margin-bottom: 20px;">
+              <span class="spec-chip">Event Sensors</span>
+              <span class="spec-chip">Solid LiDAR</span>
+              <span class="spec-chip">Piezo-Film</span>
+            </div>
+            <button class="btn-secondary" style="width: 100%; padding: 10px;" onclick="showExploreDetail('electronics')">
+              DOMAIN SPECIFICATIONS &rarr;
+            </button>
+          </div>
+
+          <!-- Domain 5: Programming -->
+          <div class="tech-card tilt-card reveal reveal-delay-1" data-category="programming">
+            <div class="tech-header">
+              <span class="tech-cat-badge">05 // PROGRAMMING &amp; RUNTIMES</span>
+              <span class="tech-status-dot"></span>
+            </div>
+            <h3 class="tech-card-title">Real-Time Programming</h3>
+            <p class="tech-card-desc">
+              Deterministic real-time operating systems (RTOS), zero-copy binary serialization protocols, WebGL telemetry pipelines, and bare-metal firmware.
+            </p>
+            <div class="tech-metrics">
+              <div class="metric-cell"><span class="metric-val">Zero</span><span class="metric-key">GARBAGE COLL.</span></div>
+              <div class="metric-cell"><span class="metric-val">120 FPS</span><span class="metric-key">TELEMETRY STREAM</span></div>
+            </div>
+            <div class="pillar-specs" style="margin-bottom: 20px;">
+              <span class="spec-chip">Rust &amp; C</span>
+              <span class="spec-chip">Bare-Metal RTOS</span>
+              <span class="spec-chip">SIMD Vectors</span>
+            </div>
+            <button class="btn-secondary" style="width: 100%; padding: 10px;" onclick="showExploreDetail('programming')">
+              DOMAIN SPECIFICATIONS &rarr;
+            </button>
+          </div>
+
+          <!-- Domain 6: Experimental Projects -->
+          <div class="tech-card tilt-card reveal reveal-delay-2" data-category="experimental">
+            <div class="tech-header">
+              <span class="tech-cat-badge">06 // EXPERIMENTAL LABS</span>
+              <span class="tech-status-dot"></span>
+            </div>
+            <h3 class="tech-card-title">Experimental Projects</h3>
+            <p class="tech-card-desc">
+              Pulsed magnetic plasma containment thrusters, 77K cryogenic superconducting power pipes, and direct neural motor prostheses.
+            </p>
+            <div class="tech-metrics">
+              <div class="metric-cell"><span class="metric-val">4,200 s</span><span class="metric-key">SPEC. IMPULSE</span></div>
+              <div class="metric-cell"><span class="metric-val">&lt; 0.01%</span><span class="metric-key">POWER LOSS</span></div>
+            </div>
+            <div class="pillar-specs" style="margin-bottom: 20px;">
+              <span class="spec-chip">Magneto-Plasma</span>
+              <span class="spec-chip">Superconductors</span>
+              <span class="spec-chip">Neural Haptics</span>
+            </div>
+            <button class="btn-secondary" style="width: 100%; padding: 10px;" onclick="showExploreDetail('experimental')">
+              DOMAIN SPECIFICATIONS &rarr;
+            </button>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-top">
+        <div class="footer-brand-col">
+          <a href="index.html" class="brand-logo">
+            <div class="logo-symbol">
+              <svg viewBox="0 0 100 100" fill="none">
+                <polygon points="50,5 90,27.5 90,72.5 50,95 10,72.5 10,27.5" stroke="#00D9FF" stroke-width="6" fill="rgba(16, 22, 41, 0.7)" />
+                <path d="M28,68 L28,32 L50,54 L72,32 L72,68" stroke="#FFFFFF" stroke-width="6" stroke-linecap="round" stroke-linejoin="round" />
+                <circle cx="50" cy="50" r="5" fill="#00D9FF" />
+              </svg>
+            </div>
+            Machina<span class="highlight">X</span>
+          </a>
+          <p>ENGINEERING TOMORROW. TODAY.</p>
+          <div class="footer-status-indicator">
+            <span class="status-dot-pulse"></span>
+            <span>ALL SYSTEMS NOMINAL // 2026</span>
+          </div>
+        </div>
+
+        <div class="footer-links-col">
+          <h4 class="footer-heading">NAVIGATION</h4>
+          <ul class="footer-links-list">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="explore.html">Explore Showcase</a></li>
+            <li><a href="projects.html">Projects Portfolio</a></li>
+            <li><a href="blogs.html">Blogs &amp; Insights</a></li>
+            <li><a href="contact.html">Contact Us</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-links-col">
+          <h4 class="footer-heading">RESEARCH</h4>
+          <ul class="footer-links-list">
+            <li><a href="explore.html">Robotics Engineering</a></li>
+            <li><a href="explore.html">Artificial Intelligence</a></li>
+            <li><a href="explore.html">Automation &amp; Swarms</a></li>
+            <li><a href="admin/index.html">Control Center</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-newsletter-col">
+          <h4 class="footer-heading">TELEMETRY DISPATCH</h4>
+          <p style="color: var(--text-secondary); font-size: 0.85rem; margin-bottom: 16px;">
+            Questions regarding our research matrix:
+          </p>
+          <div style="font-family: var(--font-mono); font-size: 0.82rem; color: var(--electric-blue); word-break: break-all; margin-bottom: 20px;">
+            kavinprakash212009@gmail.com
+          </div>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <div>&copy; 2026 MachinaX. All Rights Reserved.</div>
+        <div class="footer-legal-links">
+          <a href="privacy.html">Privacy Policy</a>
+          <a href="terms.html">Terms and Conditions</a>
+          <a href="sitemap.xml">Sitemap</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Modal -->
+  <div id="details-modal" class="modal-overlay" role="dialog" aria-modal="true" aria-hidden="true">
+    <div class="modal-content-panel">
+      <button id="modal-close-btn" class="modal-close-btn" aria-label="Close dialog">&times;</button>
+      <div id="modal-body"></div>
+    </div>
+  </div>
+
+  <!-- Scripts -->
+  <script src="js/main.js"></script>
+  <script src="js/animations.js"></script>
+  <script>
+    // Interactive category filter for Explore page
+    const filterButtons = document.querySelectorAll('[data-filter]');
+    const cards = document.querySelectorAll('#explore-cards-grid .tech-card');
+
+    filterButtons.forEach(btn => {
+      btn.addEventListener('click', () => {
+        filterButtons.forEach(b => b.classList.remove('active'));
+        btn.classList.add('active');
+        const filter = btn.getAttribute('data-filter');
+
+        cards.forEach(card => {
+          if (filter === 'all' || card.getAttribute('data-category') === filter) {
+            card.style.display = 'flex';
+          } else {
+            card.style.display = 'none';
+          }
+        });
+      });
+    });
+
+    const exploreDomainData = {
+      robotics: {
+        title: "Robotics Engineering Architecture",
+        img: "assets/images/blog-robotics.svg",
+        desc: "MachinaX robotics research centers on replacing rigid mechanical joints with biomorphic fluidic actuators. By employing micro-hydraulic channels governed by piezoelectric valves, our artificial muscles emulate biological sarcomeres, yielding organic compliance without sacrificial weight.",
+        specs: { "Actuator Max Stress": "45 MPa", "Proprioception Frequency": "1000 Hz", "Torque Density": "85 Nm/kg" }
+      },
+      ai: {
+        title: "Artificial Intelligence & Edge Reasoning",
+        img: "assets/images/blog-ai.svg",
+        desc: "Designed to operate independently in high-latency interplanetary exploration, Cognition-7 prunes redundant model weights and quantizes activations dynamically according to available electrical power and thermal parameters.",
+        specs: { "Architecture": "Mixture-of-Experts", "Precision": "FP8 / INT4 Hybrid", "On-Chip SNN Memory": "128 MB SRAM" }
+      },
+      automation: {
+        title: "Autonomous Mesh Coordination",
+        img: "assets/images/project-aether.svg",
+        desc: "When ten thousand autonomous drones operate in GPS-denied environments, MachinaX gossip consensus guarantees seamless formation control and collision mitigation without any single master node.",
+        specs: { "Consensus Time": "< 12 ms", "Packet Loss Tolerance": "Up to 42%", "Relay Security": "Post-Quantum Dilithium" }
+      },
+      electronics: {
+        title: "Neuromorphic Electronics & Sensors",
+        img: "assets/images/blog-research.svg",
+        desc: "Neuromorphic event cameras report asynchronous light intensity changes with microsecond temporal resolution, feeding directly into spiking neural matrices without traditional frame buffer latency.",
+        specs: { "Pixel Latency": "2 &mu;s", "Dynamic Range": "140 dB", "Power Consumption": "< 15 mW" }
+      },
+      programming: {
+        title: "Deterministic Real-Time Systems",
+        img: "assets/images/blog-tutorials.svg",
+        desc: "Our real-time software stack leverages bare-metal Rust and C kernels with zero garbage collection pauses, streaming thousands of spatial telemetry telemetry packets into 120 FPS WebGL digital twins.",
+        specs: { "Max Jitter": "< 50 ns", "Binary Serialization": "Zero-Copy Structs", "GPU Draw Calls": "Instanced Multi-Draw" }
+      },
+      experimental: {
+        title: "Experimental Propulsion & Superconductors",
+        img: "assets/images/project-hyperion.svg",
+        desc: "Experimental labs push the outer envelope of physical science: pulsed inductive plasma thrusters with non-eroding magnetic nozzles and liquid nitrogen superconducting transmission lines.",
+        specs: { "Plasma Temp": "1.2 Million K", "Superconductor Temp": "77 K (Liquid N2)", "Current Density": "10,000 A/cm²" }
+      }
+    };
+
+    function showExploreDetail(domainKey) {
+      const data = exploreDomainData[domainKey];
+      if (!data) return;
+
+      let specTable = '';
+      if (data.specs) {
+        specTable = `
+          <div class="tech-metrics" style="margin: 20px 0;">
+            ${Object.entries(data.specs).map(([k, v]) => `
+              <div class="metric-cell">
+                <span class="metric-val">${v}</span>
+                <span class="metric-key">${k}</span>
+              </div>
+            `).join('')}
+          </div>
+        `;
+      }
+
+      const html = `
+        <div>
+          <span class="tech-cat-badge" style="color: var(--electric-blue); border-color: rgba(0,217,255,0.3); margin-bottom: 12px; display: inline-block;">DOMAIN BLUEPRINT</span>
+          <h2 style="font-family: var(--font-display); font-size: 1.5rem; color: var(--white); margin-bottom: 16px;">${data.title}</h2>
+          <div style="width: 100%; height: 200px; border-radius: var(--radius-md); overflow: hidden; margin-bottom: 20px; border: 1px solid var(--glass-border);">
+            <img src="${data.img}" alt="${data.title}" style="width: 100%; height: 100%; object-fit: cover;" />
+          </div>
+          <p style="color: var(--text-secondary); line-height: 1.8; font-size: 0.95rem;">${data.desc}</p>
+          ${specTable}
+          <div style="margin-top: 24px; text-align: right;">
+            <a href="projects.html" class="btn-primary" style="padding: 10px 24px;">EXPLORE RELATED PROJECTS &rarr;</a>
+          </div>
+        </div>
+      `;
+
+      window.openMachinaModal(data.title, html);
+    }
+  </script>
+</body>
+</html>
+
