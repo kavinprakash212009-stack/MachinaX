@@ -1,0 +1,105 @@
+[
+  {
+    "id": "project-chronos-iv",
+    "title": "Project Chronos-IV: Autonomous Bipedal Exoskeleton",
+    "category": "Robotics",
+    "categorySlug": "robotics",
+    "status": "Operational",
+    "image": "assets/images/project-chronos.svg",
+    "summary": "Next-generation full-body assistive exoskeleton featuring biomorphic hydraulic muscles, active inertial balancing, and real-time neuromuscular intent prediction.",
+    "specs": {
+      "Payload Capacity": "140 kg",
+      "Response Latency": "< 1.8 ms",
+      "Power Source": "Solid-State Graphene Cell",
+      "Endurance": "18.5 hours"
+    },
+    "description": "Project Chronos-IV represents the zenith of human-machine augmentation. Designed for heavy industrial disaster rescue and high-g acceleration mitigation, Chronos-IV pairs low-impedance biomorphic actuators with multi-axis force plates in the soles to predict operator locomotion intent up to 120 milliseconds before physical footfall.",
+    "techStack": ["Biomorphic Actuators", "Real-Time RTOS", "Graphene Storage", "Carbon-Titanium Lattice"]
+  },
+  {
+    "id": "project-aether-ai",
+    "title": "Project Aether-AI: Decentralized Swarm Reasoning Core",
+    "category": "AI",
+    "categorySlug": "ai",
+    "status": "Field Testing",
+    "image": "assets/images/project-aether.svg",
+    "summary": "Peer-to-peer cognitive mesh architecture enabling thousands of autonomous aerial and terrestrial drones to coordinate tactical decisions without a centralized server.",
+    "specs": {
+      "Swarm Capacity": "10,000+ nodes",
+      "Consensus Protocol": "Asynchronous Proof-of-State",
+      "Communication Range": "Mesh Relayed 250 km",
+      "Inference Bandwidth": "4.8 TFLOPS/W"
+    },
+    "description": "Aether-AI decouples deep reinforcement learning policies from fragile centralized cloud compute. When communication links are severed or electronically jammed, individual nodes maintain a cryptographic shared mental model through low-bandwidth telemetry gossip protocols.",
+    "techStack": ["Spiking Neural Nets", "Decentralized Gossip", "RISC-V Neuromorphic", "Zero-Knowledge Verification"]
+  },
+  {
+    "id": "project-hyperion",
+    "title": "Project Hyperion: Sub-Orbital Magneto-Plasma Thruster",
+    "category": "Engineering",
+    "categorySlug": "engineering",
+    "status": "Prototyping",
+    "image": "assets/images/project-hyperion.svg",
+    "summary": "High-efficiency pulsed inductive plasma propulsion system designed for high-altitude aerodynamic orbital insertion and space debris remediation.",
+    "specs": {
+      "Specific Impulse": "4,200 s",
+      "Plasma Core Temp": "1.2 Million K",
+      "Magnetic Nozzle": "High-Tc Superconductor",
+      "Fuel Efficiency": "94.6% ionization"
+    },
+    "description": "By eliminating physical electrode erosion through magnetic containment, Hyperion delivers continuous variable thrust profiles over millions of ignition cycles with zero mechanical degradation.",
+    "techStack": ["Magnetohydrodynamics", "Superconducting Magnets", "Femtosecond Laser Ignition", "Xenon/Argon Mixture"]
+  },
+  {
+    "id": "project-synapse-x",
+    "title": "Project Synapse-X: Neural Motor Prosthesis",
+    "category": "Robotics",
+    "categorySlug": "robotics",
+    "status": "Clinical Validation",
+    "image": "assets/images/project-synapse.svg",
+    "summary": "High-density micro-electrode array interface restoring natural haptic sensation and high-dexterity finger movement for upper-limb amputees.",
+    "specs": {
+      "Electrode Density": "1,024 channels",
+      "Sensory Feedback": "Bi-directional Haptic",
+      "Wireless Link": "Ultra-Wideband 10 Mbps",
+      "Biocompatibility": "ISO 10993 Certified"
+    },
+    "description": "Synapse-X translates cortical motor signals directly into smooth multi-finger manipulation, feeding tactile resistance and temperature signals back to residual sensory nerves.",
+    "techStack": ["Neural Decoding", "Micro-Electrode Arrays", "Polymer Electrodes", "Adaptive Kalman Filters"]
+  },
+  {
+    "id": "project-aegis-grid",
+    "title": "Project Aegis-Grid: Cryogenic Superconducting Microgrid",
+    "category": "Engineering",
+    "categorySlug": "engineering",
+    "status": "Deployed",
+    "image": "assets/images/project-aegis.svg",
+    "summary": "Zero-resistance power distribution grid for hyperscale data centers and particle accelerator facilities.",
+    "specs": {
+      "Transmission Loss": "< 0.01%",
+      "Operating Temp": "77 Kelvin (Liquid Nitrogen)",
+      "Current Capacity": "12,000 Amperes",
+      "Fault Recovery": "< 300 microseconds"
+    },
+    "description": "Superconducting cables encased in vacuum-jacketed cryogenic pipelines eliminate electrical transmission line losses while handling extreme burst current loads.",
+    "techStack": ["YBCO Superconductors", "Cryocooler Control", "Fast Solid-State Breakers", "Fiber Optic Sensor Bus"]
+  },
+  {
+    "id": "project-omniscience",
+    "title": "Project Omniscience: Real-Time Multimodal Cognition Matrix",
+    "category": "AI",
+    "categorySlug": "ai",
+    "status": "Operational",
+    "image": "assets/images/project-omni.svg",
+    "summary": "Unified perceptual foundational model unifying video, thermal, spectral, and acoustic sensors into continuous real-time semantic world states.",
+    "specs": {
+      "Sensor Modalities": "8 concurrent streams",
+      "World-State Refresh": "240 Hz",
+      "Model Parameters": "68 Billion (MoE)",
+      "Zero-Shot Tasks": "Object, Action, Trajectory"
+    },
+    "description": "Omniscience serves as the master cognitive engine across MachinaX robotic deployments, translating noisy multi-spectral sensor feeds into structured geometric and behavioral action predictions.",
+    "techStack": ["Multimodal Transformers", "Mixture of Experts", "FP8 Quantization", "CUDA/Triton Kernels"]
+  }
+]
+

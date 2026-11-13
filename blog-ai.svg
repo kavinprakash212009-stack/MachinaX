@@ -1,0 +1,45 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 360" width="100%" height="100%">
+  <defs>
+    <linearGradient id="aiBg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#140f2d" />
+      <stop offset="100%" stop-color="#080b16" />
+    </linearGradient>
+    <linearGradient id="aiSynapse" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#00D9FF" />
+      <stop offset="100%" stop-color="#623BFF" />
+    </linearGradient>
+    <filter id="aiGlow">
+      <feGaussianBlur stdDeviation="5" result="blur" />
+      <feMerge>
+        <feMergeNode in="blur" />
+        <feMergeNode in="SourceGraphic" />
+      </feMerge>
+    </filter>
+  </defs>
+  <rect width="600" height="360" fill="url(#aiBg)" />
+  <!-- Neural Mesh Grid -->
+  <g stroke="rgba(98, 59, 255, 0.25)" stroke-width="1.5">
+    <line x1="120" y1="120" x2="240" y2="80" />
+    <line x1="120" y1="120" x2="240" y2="180" />
+    <line x1="120" y1="240" x2="240" y2="180" />
+    <line x1="120" y1="240" x2="240" y2="280" />
+    <line x1="240" y1="80" x2="380" y2="130" stroke="#00D9FF" stroke-width="2" />
+    <line x1="240" y1="180" x2="380" y2="130" />
+    <line x1="240" y1="180" x2="380" y2="230" stroke="#623BFF" stroke-width="2" />
+    <line x1="240" y1="280" x2="380" y2="230" />
+    <line x1="380" y1="130" x2="490" y2="180" stroke="#00D9FF" stroke-width="2.5" />
+    <line x1="380" y1="230" x2="490" y2="180" stroke="#B7A0FF" stroke-width="2" />
+  </g>
+  <!-- Nodes -->
+  <circle cx="120" cy="120" r="10" fill="#00D9FF" filter="url(#aiGlow)" />
+  <circle cx="120" cy="240" r="10" fill="#623BFF" filter="url(#aiGlow)" />
+  <circle cx="240" cy="80" r="12" fill="#B7A0FF" filter="url(#aiGlow)" />
+  <circle cx="240" cy="180" r="14" fill="#00D9FF" filter="url(#aiGlow)" />
+  <circle cx="240" cy="280" r="12" fill="#623BFF" filter="url(#aiGlow)" />
+  <circle cx="380" cy="130" r="16" fill="#00D9FF" filter="url(#aiGlow)" />
+  <circle cx="380" cy="230" r="16" fill="#B7A0FF" filter="url(#aiGlow)" />
+  <circle cx="490" cy="180" r="22" fill="#FFFFFF" stroke="#00D9FF" stroke-width="4" filter="url(#aiGlow)" />
+  <!-- Circuit labels -->
+  <text x="490" y="240" text-anchor="middle" fill="#00D9FF" font-family="'Orbitron',sans-serif" font-size="12" letter-spacing="2">OUTPUT CONVERGENCE</text>
+</svg>
+

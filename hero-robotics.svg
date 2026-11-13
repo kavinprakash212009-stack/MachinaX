@@ -1,0 +1,65 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 600" width="100%" height="100%">
+  <defs>
+    <radialGradient id="heroCoreGrad" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#00D9FF" stop-opacity="0.9" />
+      <stop offset="40%" stop-color="#623BFF" stop-opacity="0.7" />
+      <stop offset="80%" stop-color="#080B16" stop-opacity="0.9" />
+      <stop offset="100%" stop-color="#080B16" stop-opacity="0" />
+    </radialGradient>
+    <linearGradient id="cyberRingGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#00D9FF" />
+      <stop offset="50%" stop-color="#B7A0FF" />
+      <stop offset="100%" stop-color="#623BFF" />
+    </linearGradient>
+    <filter id="coreGlow" x="-50%" y="-50%" width="200%" height="200%">
+      <feGaussianBlur stdDeviation="8" result="blur" />
+      <feMerge>
+        <feMergeNode in="blur" />
+        <feMergeNode in="SourceGraphic" />
+      </feMerge>
+    </filter>
+  </defs>
+
+  <!-- Dark cybernetic background -->
+  <rect width="600" height="600" fill="transparent" />
+
+  <!-- Outer HUD Calibration Marks -->
+  <circle cx="300" cy="300" r="270" stroke="rgba(0, 217, 255, 0.15)" stroke-width="1" stroke-dasharray="8 6" />
+  <circle cx="300" cy="300" r="240" stroke="rgba(98, 59, 255, 0.25)" stroke-width="1.5" stroke-dasharray="16 12 4 12" />
+
+  <!-- Geometric Orbital Brackets -->
+  <path d="M 120 300 A 180 180 0 0 1 480 300" fill="none" stroke="url(#cyberRingGrad)" stroke-width="2.5" stroke-dasharray="90 30 180 30" filter="url(#coreGlow)" />
+  <path d="M 480 300 A 180 180 0 0 1 120 300" fill="none" stroke="url(#cyberRingGrad)" stroke-width="2.5" stroke-dasharray="120 40 60 40" filter="url(#coreGlow)" />
+
+  <!-- Inner Glowing Energy Core -->
+  <circle cx="300" cy="300" r="140" fill="url(#heroCoreGrad)" filter="url(#coreGlow)" />
+  <circle cx="300" cy="300" r="100" stroke="#00D9FF" stroke-width="1" opacity="0.6" stroke-dasharray="4 8" />
+  
+  <!-- Cybernetic Hex Lattice -->
+  <polygon points="300,210 378,255 378,345 300,390 222,345 222,255" fill="none" stroke="#FFFFFF" stroke-width="1.5" opacity="0.4" />
+  <polygon points="300,230 361,265 361,335 300,370 239,335 239,265" fill="rgba(0, 217, 255, 0.08)" stroke="#00D9FF" stroke-width="2" filter="url(#coreGlow)" />
+
+  <!-- Robotics Mechanical Eye / Pupil Optic -->
+  <circle cx="300" cy="300" r="45" fill="#080B16" stroke="#00D9FF" stroke-width="3" />
+  <circle cx="300" cy="300" r="22" fill="#00D9FF" filter="url(#coreGlow)" />
+  <circle cx="300" cy="300" r="8" fill="#FFFFFF" />
+
+  <!-- Precision Crosshairs -->
+  <line x1="160" y1="300" x2="200" y2="300" stroke="#00D9FF" stroke-width="2" />
+  <line x1="400" y1="300" x2="440" y2="300" stroke="#00D9FF" stroke-width="2" />
+  <line x1="300" y1="160" x2="300" y2="200" stroke="#00D9FF" stroke-width="2" />
+  <line x1="300" y1="400" x2="300" y2="440" stroke="#00D9FF" stroke-width="2" />
+
+  <!-- Node points -->
+  <circle cx="378" cy="255" r="5" fill="#00D9FF" filter="url(#coreGlow)" />
+  <circle cx="378" cy="345" r="5" fill="#B7A0FF" filter="url(#coreGlow)" />
+  <circle cx="222" cy="255" r="5" fill="#B7A0FF" filter="url(#coreGlow)" />
+  <circle cx="222" cy="345" r="5" fill="#00D9FF" filter="url(#coreGlow)" />
+  <circle cx="300" cy="210" r="5" fill="#FFFFFF" filter="url(#coreGlow)" />
+  <circle cx="300" cy="390" r="5" fill="#FFFFFF" filter="url(#coreGlow)" />
+
+  <!-- Tech labels -->
+  <text x="300" y="470" text-anchor="middle" fill="#00D9FF" font-family="'Orbitron', sans-serif" font-size="11" letter-spacing="3">NEURAL CORE // ACTIVE</text>
+  <text x="300" y="490" text-anchor="middle" fill="rgba(255,255,255,0.6)" font-family="'JetBrains Mono', monospace" font-size="10">REFRESH: 240Hz | COMPLIANCE: NOMINAL</text>
+</svg>
+
